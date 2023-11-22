@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 800px;
+        display: flex;
+
+        /* flex-direction + flex-wrap */
+        flex-flow: row wrap;
+
+        /* justify 调整  content 内容*/
+
+        /* 左对齐 */
+        /* justify-content: flex-start; */
+
+        /* 右对齐 */
+        /* justify-content: flex-end; */
+
+        /* 居中对齐 */
+        /* justify-content: center; */
+
+        /* 左右对齐，中间居中 */
+        /* justify-content: space-between; */
+
+        /* 等间距对齐 */
+        /* justify-content: space-around; */
+      }
+
+      #box div {
+        width: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  </body>
+</html>
