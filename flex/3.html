@@ -6,11 +6,30 @@
     <title>Document</title>
     <style>
       #box {
-        width: 200px;
+        width: 800px;
+        height: 400px;
         display: flex;
-        /* 多余的盒子会掉下来 */
-        flex-direction: row;
-        flex-wrap: wrap;
+        background-color: blue;
+
+        /* flex-direction + flex-wrap */
+        flex-flow: row wrap;
+
+        /* align 排列  items */
+
+        /* 默认的顶部对齐方式 */
+        /* align-items: flex-start; */
+
+        /* 底部对齐 */
+        /* align-items: flex-end; */
+
+        /* 居中对齐 */
+        /* align-items: center; */
+
+        /* 底线 */
+        /* align-items: baseline; */
+
+        /* 填满高度 */
+        /* align-items: stretch; */
       }
 
       #box div {

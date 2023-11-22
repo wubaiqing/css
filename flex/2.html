@@ -6,10 +6,28 @@
     <title>Document</title>
     <style>
       #box {
-        width: 200px;
+        width: 800px;
         display: flex;
-        /* 列模式 */
-        flex-direction: column;
+
+        /* flex-direction + flex-wrap */
+        flex-flow: row wrap;
+
+        /* justify 调整  content 内容*/
+
+        /* 左对齐 */
+        /* justify-content: flex-start; */
+
+        /* 右对齐 */
+        /* justify-content: flex-end; */
+
+        /* 居中对齐 */
+        justify-content: center;
+
+        /* 左右对齐，中间居中 */
+        /* justify-content: space-between; */
+
+        /* 等间距对齐 */
+        /* justify-content: space-around; */
       }
 
       #box div {

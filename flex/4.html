@@ -7,23 +7,29 @@
     <style>
       #box {
         width: 800px;
+        height: 400px;
+        background-color: blue;
+
         display: flex;
 
-        /* flex-direction + flex-wrap */
+        /* align 排列  items */
         flex-flow: row wrap;
 
-        justify-content: space-between;
+        /* 居中布局 */
+        align-items: center;
+        justify-content: center;
       }
 
       #box div {
         width: 100px;
+        text-align: center;
         background-color: red;
       }
     </style>
   </head>
   <body>
     <div id="box">
-      <div>1</div>
+      <div id="text">1</div>
       <div>2</div>
       <div>3</div>
     </div>
