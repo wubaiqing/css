@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        background-color: blue;
+
+        flex-flow: row nowrap;
+        align-items: flex-start;
+      }
+
+      #box div {
+        flex-basis: 120px;
+        text-align: center;
+        background-color: red;
+      }
+
+      .item1,
+      .item3 {
+        /* 不缩小 */
+        /* flex-shrink: 0; */
+
+        /* 可以缩小-然后平均分 */
+        flex-shrink: 1;
+        width: 150px;
+      }
+
+      .item2,
+      .item4 {
+        background-color: pink !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+    </div>
+  </body>
+</html>
