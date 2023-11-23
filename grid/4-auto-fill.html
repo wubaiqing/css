@@ -12,12 +12,9 @@
       #container {
         /* display: grid; */
         display: grid;
-        /* grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 100px 100px 100px; */
-        /* grid-template-columns: 33.33% 33.33% 33.33%;
-        grid-template-rows: 33.33% 33.33% 33.33%; */
-        grid-template-columns: repeat(3, 33.33%);
-        grid-template-rows: repeat(3, 33.33%);
+
+        /* grid-template-columns: repeat(auto-fill, 33.33%); */
+        grid-template-columns: repeat(auto-fit, 33.33%);
       }
 
       .item {
