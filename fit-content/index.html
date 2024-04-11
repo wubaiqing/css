@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .fit-content-wrapper {
+            width: 100%;
+            height: 200px;
+            display: grid;
+            grid-template-columns: fit-content(400px) 400px fit-content(400px);
+        }
+
+        .item1 {
+            background-color: blueviolet;
+        }
+
+        .item2 {
+            background-color: pink;
+        }
+
+       .item3 {
+            background-color: yellowgreen;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="fit-content-wrapper"> 
+        <div class="fit-item item1">曲杏径箭锡呀适纠梦锅破茎氏巷疾菩秆沼征伟乾吼芽歧弯轿猜柴漠侈鸦涕洛孜纱皆篷苍域碑溉肢驰旗饲琼戴粪茬嚼奈躬坟裳蚕腿聋衬薯橄喇浊肚刃佬漆描袋敞迭嘉韦桂毅郡砂撑痴凿府辛芬驻陋讳患腔侥抹颊蚂卜瑞虐础蜂趁诸颈蔚亨窑剩荣脾涯牟粉鹤讹轴绕砸挑懈叮漏堂丸逢拟涡蓄哟呼坪恒棚舶蓝倪妙皖坊膀帘炊泵畔榴敲寿缀曝琳妆浸纤婶摸翼瑰踊俗骚捏岂烤淑诠漂剧蹈睁刑厕咳裹剑乏渠红肆港胃贸菇魄铲窜邀莉逸绵悯崖股躁缸舜谚叭谱淤卧贼鼓姑垣辱娠惑邯杠瞪朵邵搞嫌劲缔孵篮傍鞍虱祀霄庆辅焕茧袭拽禄眉盲麒窄惶稽饶虚舷呵脉狄垂寇词川莽耘祥矩杉谓嗓喜碱苛舟鸠兢津蔼碧瑙慰裙琢炕峦艘卵柜哲狰矣洽贺刀祸勾纷漪翔帆愤拆蛰娥掰嘱档荡儒宏饶锯 fit-content(400px)</div>
+        <div class="fit-item item2">text2 固定宽度 width: 400px</div>
+        <div class="fit-item item3">text3 固定 fit-content(400px)</div>
+    </div>
+
+  </body>
+</html>
